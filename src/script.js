@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // });
     loadCarsBtn.addEventListener('click', () => {
         (async function() {
-            const { data } = await( await fetch(`/api/cars`)).json();
+            const { data } = await( await fetch(`/api/message`)).json();
             cars = data;
                 carList.innerHTML = '';
                 data.forEach((car, index) => {
