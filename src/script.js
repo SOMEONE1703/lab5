@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("load called");
     const loadCarsBtn = document.getElementById('loadCarsBtn');
     const carList = document.getElementById('carList');
     cars = [];
@@ -6,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch('http://localhost:3001/cars')
             .then(response => response.json())
             .then(data => {
+                console.log("received");
+                console.log(data);
                 cars = data;
                 carList.innerHTML = '';
                 data.forEach((car, index) => {
