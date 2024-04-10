@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("load called");
+    //console.log("load called");
     const loadCarsBtn = document.getElementById('loadCarsBtn');
     const carList = document.getElementById('carList');
     cars = [];

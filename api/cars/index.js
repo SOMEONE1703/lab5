@@ -9,8 +9,9 @@ module.exports = async function (context, req) {
         cars.push(req.body);
         context.res=req.body;
     }
-    
-    context.res = {
-        body:"invalid method"
-    };
+    else{
+        context.res = {
+            body:"invalid method"
+        };
+    }
 }
